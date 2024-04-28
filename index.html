@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTunes Search App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>iTunes Search App</h1>
+        <input type="text" id="searchInput" placeholder="Search for songs...">
+        <div id="loader" class="loader"></div>
+        <div id="results"> 
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Track Name</th>
+                        <th>Artist</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody">
+                </tbody>
+            </table>
+            <p id="noResults"></p>
+        </div>
+    </div>
+</body>
+</html>
